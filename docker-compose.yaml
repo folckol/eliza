@@ -30,9 +30,7 @@ services:
             - SLIPPAGE=1
             - SOLANA_RPC_URL=https://api.mainnet-beta.solana.com
             - HELIUS_API_KEY=
-
-            - SERVER_URL=https://ai-agents-api.testbotbot.site
-#            - SERVER_PORT=3000
+            - SERVER_PORT=3000
             - WALLET_SECRET_SALT=secret_salt
 
             - DEEPSEEK_API_URL=https://api.deepseek.com
