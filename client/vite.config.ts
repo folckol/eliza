@@ -1,9 +1,9 @@
+// vite.config.js
 import { defineConfig, loadEnv } from "vite";
 import react from "@vitejs/plugin-react-swc";
 import viteCompression from "vite-plugin-compression";
 import path from "node:path";
 
-// https://vite.dev/config/
 export default defineConfig(({ mode }) => {
     const envDir = path.resolve(__dirname, "..");
     const env = loadEnv(mode, envDir, "");
@@ -42,7 +42,8 @@ export default defineConfig(({ mode }) => {
             },
         },
         server: {
-            host: '0.0.0.0'
+            host: '0.0.0.0',
+            allowedHosts: ['ai-agents.testbotbot.site']
         }
     };
 });
