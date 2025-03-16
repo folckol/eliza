@@ -41,5 +41,8 @@ export default defineConfig(({ mode }) => {
                 "@": "/src",
             },
         },
+        server: {
+            host: '0.0.0.0'
+        }
     };
 });
