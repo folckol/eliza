@@ -79,4 +79,4 @@ COPY --from=builder /app/characters ./characters
 EXPOSE 3000 5173
 
 # Command to start the application
-CMD ["sh", "-c", "pnpm start --characters='characters/DefaultNewsCharacter.json,characters/TechnoBloger1.json' & pnpm start:client"]
+CMD ["sh", "-c", "pnpm start --characters='characters/DefaultNewsCharacter.json,characters/TechnoBloger1.json,characters/NedoInfl.json' & pnpm start:client"]
